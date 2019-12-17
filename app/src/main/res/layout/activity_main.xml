@@ -8,36 +8,20 @@
     <!--Xác định vị trí theo parent-->
 
     <TextView
-
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/tvView2"
+        app:layout_constraintRight_toLeftOf="@id/guideLine1"
         android:background="#f20"
         android:id="@+id/tvView1"
         android:textSize="25sp"
         android:text="View 1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <TextView
-        app:layout_constraintLeft_toRightOf="@id/tvView1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/tvView3"
-        android:background="#4B92BE"
-        android:id="@+id/tvView2"
-        android:textSize="25sp"
-        android:text="View 2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        app:layout_constraintLeft_toRightOf="@id/tvView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:background="#7E57C2"
-        android:id="@+id/tvView3"
-        android:textSize="25sp"
-        android:text="View 3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+   <androidx.constraintlayout.widget.Guideline
+       android:id="@+id/guideLine1"
+       android:orientation="vertical"
+       app:layout_constraintGuide_percent="0.5"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
