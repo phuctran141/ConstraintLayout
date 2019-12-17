@@ -8,50 +8,25 @@
     <!--Xác định vị trí theo parent-->
 
     <TextView
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvView2"
         android:id="@+id/tvView1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="View1"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         />
-
     <TextView
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvView1"
         android:id="@+id/tvView2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintRight_toLeftOf="@+id/tvView1"
-        app:layout_constraintBottom_toTopOf="@+id/tvView1"
         android:text="View2"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="74dp" />
-    <TextView
-        android:id="@+id/tvView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@+id/tvView1"
-        app:layout_constraintBottom_toTopOf="@+id/tvView1"
-        android:text="View3"
-        android:textSize="30sp"
-         />
-    <TextView
-        android:id="@+id/tvView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@+id/tvView1"
-        app:layout_constraintTop_toBottomOf="@+id/tvView1"
-        android:text="View4"
-        android:textSize="30sp" />
-    <TextView
-        android:id="@+id/tvView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintRight_toLeftOf="@+id/tvView1"
-        app:layout_constraintTop_toBottomOf="@+id/tvView1"
-        android:text="View5"
-        android:textSize="30sp"
-         />
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
